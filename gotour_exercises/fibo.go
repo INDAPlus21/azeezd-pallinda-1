@@ -5,6 +5,7 @@ import "fmt"
 // fibonacci is a function that returns
 // a function that returns an int.
 func fibonacci() func() int {
+	// Store current and previous values, changing them on call
 	i0, i1 := 0, 1
 	return func() int {
 		val := i0
